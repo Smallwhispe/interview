@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "notes": [
+    "This file defines SDT skill profiles. End users should NOT need to know any skill name.",
+    "SDT resolves a domain from spec/repo signals, picks a profile, then maps logical capabilities to concrete skill folders.",
+    "Resolution must follow sdt/ff.md 'Skills (host compatibility)' (search .claude/skills/<name>/SKILL.md then .cursor/skills/<name>/SKILL.md).",
+    "Fallback rule: if a domain/profile-mapped skill is missing on the current host, fall back to defaultProfile for the same logical key."
+  ],
+  "defaultProfile": "default",
+  "domains": {
+    "unknown": { "profile": "default" },
+    "default": { "profile": "default" }
+  },
+  "profiles": {
+    "default": {
+      "backend": {
+        "TEST_KNOWLEDGE": "testing-knowledge",
+        "API_TEST": "api-mind"
+      },
+      "frontend": {
+        "WEBE2E_META": "webe2e",
+        "WEBE2E_RUN": "webe2e",
+        "DEPLOY": "goofy-deploy-workflow"
+      }
+    }
+  }
+}
+

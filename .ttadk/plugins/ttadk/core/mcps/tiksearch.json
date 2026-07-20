@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "tika": {
+      "command": "bunx",
+      "args": [
+        "--registry=http://bnpm.byted.org/",
+        "@tiktok-mcp/tika"
+      ],
+      "env": {
+        "NPM_CONFIG_REGISTRY": "http://bnpm.byted.org/",
+        "TIKA_ENV": "office"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ttadk/bits-unit-test-gen",
+  "display_name": "Bits Unit Test Gen",
+  "version": "1.0.0",
+  "description": "自动生成、修复、保鲜单元测试。支持 Go、JS/TS、Python、Java、C++。",
+  "author": { "name": "BITS Team" },
+  "tags": ["testing", "unit-test", "coverage"],
+  "skills": [
+    { "name": "bits-unit-test-gen", "path": "bits-unit-test-gen" }
+  ]
+}

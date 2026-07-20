@@ -1,0 +1,16 @@
+# 工具与配置目录
+.claude/
+.idea/
+specs/
+
+# 插件与 MCP 配置
+ai-plugin.json
+ai-plugin-lock.json
+.mcp.json
+
+# macOS
+.DS_Store
+
+# 临时文件
+*.tmp
+*~

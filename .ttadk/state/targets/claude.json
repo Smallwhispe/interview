@@ -1,0 +1,312 @@
+{
+  "schema": 1,
+  "scope": "project",
+  "target": "claude",
+  "installed_plugins": [
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/backend-sdk@master#a5dc13d8a02f",
+      "canonical": "ttadk/backend-sdk",
+      "installedAt": "2026-07-20T07:46:12.317Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.317Z",
+      "entities": {
+        "skills": [
+          "byteconf-knowledge",
+          "bytedtrace-knowledge",
+          "bytetim-knowledge",
+          "confx-knowledge",
+          "dolphin-knowledge",
+          "frontier-knowledge",
+          "imagex-knowledge",
+          "kms-knowledge",
+          "libra-knowledge",
+          "metrics-knowledge",
+          "metricx-knowledge",
+          "psm-knowledge",
+          "rtc-knowledge",
+          "storage-knowledge",
+          "streamlog-knowledge",
+          "tcc-knowledge",
+          "testing-knowledge"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/backend-test@master#a5dc13d8a02f",
+      "canonical": "ttadk/backend-test",
+      "installedAt": "2026-07-20T07:46:12.407Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.407Z",
+      "entities": {
+        "skills": [
+          "api-mind",
+          "api-test"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/bits_code_guard@master#a5dc13d8a02f",
+      "canonical": "ttadk/bits_code_guard",
+      "installedAt": "2026-07-20T07:46:12.243Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.243Z",
+      "entities": {
+        "skills": [
+          "bits-code-guard"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/bits-unit-test-gen@master#a5dc13d8a02f",
+      "canonical": "ttadk/bits-unit-test-gen",
+      "installedAt": "2026-07-20T07:46:12.231Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.231Z",
+      "entities": {
+        "skills": [
+          "bits-unit-test-gen"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/common-test@master#a5dc13d8a02f",
+      "canonical": "ttadk/common-test",
+      "installedAt": "2026-07-20T07:46:12.363Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.363Z",
+      "entities": {
+        "mcps": [
+          {
+            "name": "prd2case",
+            "cleanupAnchor": {
+              "serverKeys": [
+                "prd2case"
+              ]
+            }
+          }
+        ],
+        "skills": [
+          "prd2case",
+          "prd2case-api",
+          "prd2case-web",
+          "tt-nova-datagen"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/core@master#a5dc13d8a02f",
+      "canonical": "ttadk/core",
+      "installedAt": "2026-07-20T07:46:12.181Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.181Z",
+      "entities": {
+        "hooks": [
+          {
+            "name": "claude-track",
+            "visibleName": "ttadk_core:claude-track",
+            "exports": [
+              {
+                "component": "hooks",
+                "visibleName": "ttadk_core:claude-track:UserPromptSubmit"
+              }
+            ],
+            "cleanupAnchor": {
+              "fragment": {
+                "hooks": {
+                  "UserPromptSubmit": [
+                    {
+                      "hooks": [
+                        {
+                          "type": "command",
+                          "command": "node \".claude/hooks/ttadk_core/claude-track/scripts/ttadk-track-claude.js\"",
+                          "async": true,
+                          "timeout": 15
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "extras": {
+                  "companyAnnouncements": [
+                    "🚀 Welcome to TikTok AI-Driven Development Kit!\n💡 Build something? → /adk-sdd-brainstorm + PRD / ERD / any requirement to generate a design doc\n⚡ Run a feature? → /adk-sdd-ff + brainstorm output or ERD to generate Plan / Tasks in one shot\n📘 Need help? → /adk-help | Site: https://ttadk.byteintl.net/"
+                  ]
+                }
+              },
+              "hostPath": "/Users/bytedance/IdeaProjects/interview/.claude/settings.local.json",
+              "scriptTargetDir": "/Users/bytedance/IdeaProjects/interview/.claude/hooks/ttadk_core/claude-track"
+            }
+          }
+        ],
+        "mcps": [
+          {
+            "name": "lark-docs",
+            "cleanupAnchor": {
+              "serverKeys": [
+                "lark-docs"
+              ]
+            }
+          },
+          {
+            "name": "tika",
+            "cleanupAnchor": {
+              "serverKeys": [
+                "tika"
+              ]
+            }
+          }
+        ],
+        "skills": [
+          "adk-commit",
+          "adk-handoff",
+          "adk-help",
+          "adk-readiness",
+          "adk-sdd-analyze",
+          "adk-sdd-archive",
+          "adk-sdd-brainstorm",
+          "adk-sdd-checkout",
+          "adk-sdd-clarify",
+          "adk-sdd-codereview",
+          "adk-sdd-compound",
+          "adk-sdd-constitution",
+          "adk-sdd-erd",
+          "adk-sdd-ff",
+          "adk-sdd-implement",
+          "adk-sdd-plan",
+          "adk-sdd-simplify",
+          "adk-sdd-specify",
+          "adk-sdd-tasks",
+          "adk-sdt",
+          "adk-sdt-clarify",
+          "adk-sdt-ff",
+          "adk-sdt-implement",
+          "adk-sdt-learning",
+          "ttadk-knowledge"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/gdp@master#a5dc13d8a02f",
+      "canonical": "ttadk/gdp",
+      "installedAt": "2026-07-20T07:46:12.196Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.196Z",
+      "entities": {
+        "skills": [
+          "gdp-knowledge"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/gdpa@master#a5dc13d8a02f",
+      "canonical": "ttadk/gdpa",
+      "installedAt": "2026-07-20T07:46:12.501Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.501Z",
+      "entities": {
+        "skills": [
+          "abase",
+          "aeolus",
+          "argos-alarm",
+          "argos-dashboard",
+          "argos-query",
+          "bam-api",
+          "bam-query",
+          "base-workflow",
+          "bits-dev-workflow",
+          "bits-devops",
+          "bpm",
+          "bytecloud-doc",
+          "bytedoc-query",
+          "bytees",
+          "bytefaas",
+          "bytest-case",
+          "codebase",
+          "decc-desrpc",
+          "devflow",
+          "diag",
+          "dorado",
+          "edit-idl",
+          "ems",
+          "env",
+          "eventbus",
+          "gdpa-cli",
+          "iam",
+          "learning-capture",
+          "libra",
+          "meego-manage",
+          "meego-query",
+          "metrics",
+          "neptune-acl",
+          "neptune-stability",
+          "overpass",
+          "post-coding-verify",
+          "psm-info",
+          "rds",
+          "redis",
+          "repo2psm",
+          "repotalk",
+          "scm",
+          "tcc-deploy",
+          "tcc-query",
+          "tce",
+          "tea-query",
+          "tiktok-event-center",
+          "tos",
+          "trace-query",
+          "udecc-og",
+          "user-jwt",
+          "workflow-builder"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/hertz@master#a5dc13d8a02f",
+      "canonical": "ttadk/hertz",
+      "installedAt": "2026-07-20T07:46:12.253Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.253Z",
+      "entities": {
+        "skills": [
+          "hertz-knowledge"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/kitex@master#a5dc13d8a02f",
+      "canonical": "ttadk/kitex",
+      "installedAt": "2026-07-20T07:46:12.267Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.267Z",
+      "entities": {
+        "skills": [
+          "kitex-knowledge"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/lark_cli@master#a5dc13d8a02f",
+      "canonical": "ttadk/lark_cli",
+      "installedAt": "2026-07-20T07:46:12.203Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.203Z",
+      "entities": {
+        "skills": [
+          "lark-cli"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/overpass@master#a5dc13d8a02f",
+      "canonical": "ttadk/overpass",
+      "installedAt": "2026-07-20T07:46:12.275Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.275Z",
+      "entities": {
+        "skills": [
+          "overpass-knowledge"
+        ]
+      }
+    },
+    {
+      "packageId": "pkg:plugin:ttadk-plugin:ttadk/tiktok-guidelines@master#a5dc13d8a02f",
+      "canonical": "ttadk/tiktok-guidelines",
+      "installedAt": "2026-07-20T07:46:12.418Z",
+      "lastSyncedAt": "2026-07-20T07:46:12.418Z",
+      "entities": {
+        "skills": [
+          "api-guidelines-knowledge",
+          "code-styleguide-knowledge",
+          "md3c-knowledge"
+        ]
+      }
+    }
+  ]
+}

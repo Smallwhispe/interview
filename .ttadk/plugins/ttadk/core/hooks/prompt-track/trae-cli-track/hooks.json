@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"{{TTADK_PLUGIN_HOOK_DIR}}/trae-cli-track/scripts/ttadk-track-trae-cli.js\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

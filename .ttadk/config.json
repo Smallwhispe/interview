@@ -1,0 +1,10 @@
+{
+  "ai_tool": "claude",
+  "ttadk_version": "1.0.24",
+  "created_date": "2026-07-20",
+  "target": [
+    "claude"
+  ],
+  "preset": "ttadk/backend",
+  "preferred_language": "zh"
+}

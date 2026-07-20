@@ -1,0 +1,175 @@
+# Compound Scan Dimensions Schema
+
+# Defaults applied to all dimensions unless overridden
+defaults:
+  null_value_passthrough: true
+  # Governs every extraction across every dimension. Overrides any
+  # dimension-specific guidance that conflicts with it.
+  extraction_principle: |
+    Write only knowledge that requires reading and synthesizing the code.
+    If a fact is obtainable by ls / grep / cloc / reading a single file
+    alone, omit it — the reader can get it faster from the source.
+    Prefer:
+      - Conventions observed across many files, plus the specific files
+        that deviate from them (and why the deviation matters).
+      - Implicit invariants made explicit: constraints the code obeys
+        but no single file documents.
+      - Cross-file coupling: rules that only emerge when comparing
+        multiple files or directories.
+      - Fragile points: code whose shape suggests a race, a hidden
+        dependency, or a step that is easy to forget.
+    Reject:
+      - Enumerations, counts, catalog entries, existence claims.
+      - Restating what a well-named file or function already conveys.
+      - Specific detection recipes or hardcoded file-pair rules —
+        patterns must emerge from reading, not from prescribed scans.
+    Test for every entry before writing it: will an AI reading this on
+    a future task make a different decision than without it? If no,
+    drop it. Volume is not value.
+
+
+scan_dimensions:
+  - name: Design Patterns
+    target: Factory/strategy/observer and other patterns in services/*
+    output_path: docs/arch/patterns.md
+
+    constraints:
+      - "每个 pattern 必须绑定 source file，不推测不存在于代码的 pattern"
+
+  - name: Coding Standards
+    target: Coding style, naming conventions, code organization standards
+    output_path: docs/CODING.md
+
+    output:
+      style: constitution
+    constraints:
+      - "每条规则必须有具体代码示例或违反示例，不写'遵循最佳实践'这类模糊描述"
+
+  - name: Common Issues & Defensive Patterns
+    target: Typical fixed issues and workarounds
+    output_path: docs/references/fixes.md
+
+    constraints:
+      - "每个 bug 必须有触发条件 + 影响范围 + 修复方法 + source file，不捏造未验证的 bug"
+
+  - name: Config Templates
+    target: Environment variables, Docker, CI configuration
+    output_path: docs/references/config-templates.md
+
+    constraints:
+      - "提取具体的环境变量名、类型、默认值、描述；提取配置文件模板"
+
+  - name: Test Patterns
+    target: Test structure, mock strategies, coverage patterns
+    output_path: docs/references/testing-patterns.md
+
+    constraints:
+      - "列出具体的测试文件路径、mock 框架、覆盖率数据，不写'项目有单元测试'这类空话"
+
+  - name: Deployment Scripts
+    target: Build/deploy/release workflows
+    output_path: docs/references/deployment.md
+
+    constraints:
+      - "列出具体的构建命令、部署步骤、回滚策略"
+
+  - name: Reliability Practices
+    target: Fault tolerance, retry, degradation, monitoring patterns
+    output_path: docs/RELIABILITY.md
+
+    output:
+      style: constitution
+    constraints:
+      - "列出具体的重试次数/延迟、降级链路、监控端点，不写'系统有容错机制'这类空话"
+
+  - name: Security Practices
+    target: Authentication, authorization, encryption, audit patterns
+    output_path: docs/SECURITY.md
+
+    output:
+      style: constitution
+    constraints:
+      - "auth 流程必须包含协议类型 + 端点 + token 生命周期，不写'使用 OAuth'这类模糊描述"
+
+  - name: Architecture Index
+    target: Architecture document index and navigation
+    output_path: docs/arch/index.md
+
+    control:
+      activation:
+        probe_paths:
+          - docs/arch/
+    constraints:
+      - "列出 docs/arch/ 下的文档，每个有名称、路径、一句话描述（说明记录了什么知识）"
+
+  - name: Product Specs Index
+    target: Product requirements document index and navigation
+    output_path: docs/product-specs/index.md
+
+    control:
+      activation:
+        probe_paths:
+          - specs/
+    constraints:
+      - "列出 docs/product-specs/ 下的文档，每个有名称、路径、一句话描述（说明记录了什么知识）"
+
+  - name: References Index
+    target: Reference resource index and navigation
+    output_path: docs/references/index.md
+
+    control:
+      activation:
+        probe_paths:
+          - docs/references/
+    constraints:
+      - "列出 docs/references/ 下的文档，每个有名称、路径、一句话描述（说明记录了什么知识）"
+
+  - name: Project Constitution
+    target: Project principles, governance rules
+    output_path: docs/CONSTITUTION.md
+
+    output:
+      style: constitution
+    constraints:
+      - "保留已有正确内容，更新过时内容，标注来源；不重写整个宪章导致丢失现有正确内容"
+
+  - name: Quality Standards
+    target: Quality gates, testing strategy
+    output_path: docs/QUALITY.md
+
+    output:
+      style: constitution
+    constraints:
+      - "保留已有正确内容，更新过时内容；不重写导致丢失现有内容"
+
+  - name: Data Models
+    target: Core data entities and relationships extracted from code
+    output_path: docs/arch/data-models.md
+
+    constraints:
+      - "每个实体必须绑定 source file，不推测不存在于代码中的实体"
+
+  - name: Feature Catalog
+    target: Product features with code entry points and user value
+    output_path: docs/product-specs/features.md
+
+    constraints:
+      - "主源：代码路由/页面/API 入口；辅源：specs/ 补充用户价值字段；无 spec 的功能不跳过"
+
+  - name: Requirement Patterns
+    target: Requirement structure and technical decisions in specs/
+    output_path: docs/product-specs/patterns.md
+
+    control:
+      activation:
+        probe_paths:
+          - specs/
+    constraints:
+      - "列出具体的需求模式示例和来源 spec 文件，不写'需求遵循用户故事格式'这类空话"
+
+  - name: Service Topology
+    target: Inter-service dependencies, interface contracts
+    output_path: docs/arch/service-topology.md
+
+    constraints:
+      - "API contract 必须包含 method/request/response/error，不省略 error codes"

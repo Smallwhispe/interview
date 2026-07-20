@@ -1,0 +1,11 @@
+{
+  "name": "ttadk/kitex",
+  "display_name": "TTADK Kitex",
+  "version": "1.0.0",
+  "description": "Kitex RPC 框架开发指南",
+  "author": {"name": "ttadk", "email": "ttadk@bytedance.com"},
+  "tags": [],
+  "skills": [
+    {"name": "kitex-knowledge", "path": "kitex-knowledge"}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "key": {
+    "manifestDigest": "e2f0c57b0ba7eb020158a930c375ad297448ecce4dcb8830ee34483310179e64",
+    "lockfileDigest": "7cb1a53e2c19b77430dd359f4eaa1a9df1ef835a1cfd0db8b95df6125a8bde84",
+    "ttadkVersion": "1.0.24"
+  },
+  "checkedAt": "2026-07-20T07:46:33.946Z",
+  "nextCheckAt": "2026-07-20T07:46:33.946Z",
+  "durationMs": 1214,
+  "status": "success",
+  "summary": {
+    "total": 14,
+    "outdated": 0,
+    "queryFailed": 0
+  },
+  "outdatedPlugins": []
+}

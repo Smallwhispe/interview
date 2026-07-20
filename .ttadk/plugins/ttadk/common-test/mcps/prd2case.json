@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "prd2case": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--registry",
+        "https://bnpm.byted.org",
+        "@bytedance-dev/prd2case-mcp-server"
+      ],
+      "tool_timeout_sec": 900.0,
+      "startup_timeout_sec": 60.0
+    }
+  }
+}

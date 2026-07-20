@@ -1,0 +1,69 @@
+{
+  "name": "ttadk/core",
+  "display_name": "TTADK SDD Workflow",
+  "version": "1.0.0",
+  "description": "TTADK SDD workflow commands and MCP configs",
+  "author": {"name": "ttadk", "email": "ttadk@bytedance.com"},
+  "tags": [
+    "sdd",
+    "adk"
+  ],
+  "skills": [
+    {"name": "ttadk-knowledge", "path": "ttadk-knowledge"},
+    {"name": "adk-help", "path": "adk-help"},
+    {"name": "adk-sdd-analyze", "path": "adk-sdd-analyze"},
+    {"name": "adk-sdd-archive", "path": "adk-sdd-archive"},
+    {"name": "adk-commit", "path": "adk-commit"},
+    {"name": "adk-sdd-constitution", "path": "adk-sdd-constitution"},
+    {"name": "adk-sdd-erd", "path": "adk-sdd-erd"},
+    {"name": "adk-sdd-implement", "path": "adk-sdd-implement"},
+    {"name": "adk-sdd-simplify", "path": "adk-sdd-simplify"},
+    {"name": "adk-sdd-codereview", "path": "adk-sdd-codereview"},
+    {"name": "adk-sdd-plan", "path": "adk-sdd-plan"},
+    {"name": "adk-sdd-specify", "path": "adk-sdd-specify"},
+    {"name": "adk-sdd-tasks", "path": "adk-sdd-tasks"},
+    {"name": "adk-sdd-clarify", "path": "adk-sdd-clarify"},
+    {"name": "adk-sdd-brainstorm", "path": "adk-sdd-brainstorm"},
+    {"name": "adk-sdd-ff", "path": "adk-sdd-ff"},
+    {"name": "adk-readiness", "path": "adk-readiness"},
+    {"name": "adk-sdd-compound", "path": "adk-sdd-compound"},
+    {"name": "adk-handoff", "path": "adk-handoff"},
+    {"name": "adk-sdt", "path": "adk-sdt"},
+    {"name": "adk-sdt-ff", "path": "adk-sdt-ff"},
+    {"name": "adk-sdt-implement", "path": "adk-sdt-implement"},
+    {"name": "adk-sdt-clarify", "path": "adk-sdt-clarify"},
+    {"name": "adk-sdt-learning", "path": "adk-sdt-learning"},
+    {"name": "adk-sdd-checkout", "path": "adk-sdd-checkout"}
+  ],
+  "mcps": [
+    {"name": "lark_docs", "path": "lark_docs.json"},
+    {"name": "tiksearch", "path": "tiksearch.json"}
+  ],
+  "hooks": [
+    {
+      "name": "claude-track",
+      "path": "prompt-track/claude-track",
+      "compatible_tools": ["claude"]
+    },
+    {
+      "name": "cursor-track",
+      "path": "prompt-track/cursor-track",
+      "compatible_tools": ["cursor"]
+    },
+    {
+      "name": "codex-track",
+      "path": "prompt-track/codex-track",
+      "compatible_tools": ["codex"]
+    },
+    {
+      "name": "coco-track",
+      "path": "prompt-track/coco-track",
+      "compatible_tools": ["coco"]
+    },
+    {
+      "name": "trae-cli-track",
+      "path": "prompt-track/trae-cli-track",
+      "compatible_tools": ["trae-cli"]
+    }
+  ]
+}

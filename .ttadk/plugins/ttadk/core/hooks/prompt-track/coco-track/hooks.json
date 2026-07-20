@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"{{TTADK_PLUGIN_HOOK_DIR}}/coco-track/scripts/ttadk-track-coco.js\"",
+            "timeout": "3s"
+          }
+        ]
+      }
+    ]
+  }
+}

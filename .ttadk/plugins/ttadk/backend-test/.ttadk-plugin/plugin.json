@@ -1,0 +1,12 @@
+{
+  "name": "ttadk/backend-test",
+  "display_name": "TTADK Backend Test",
+  "version": "1.0.0",
+  "description": "Backend testing workflow skills (mock): api-test",
+  "author": {"name": "ttadk", "email": "ttadk@bytedance.com"},
+  "tags": [],
+  "skills": [
+    {"name": "api-test", "path": "api-test"},
+    {"name": "api-mind", "path": "api-mind"}
+  ]
+}

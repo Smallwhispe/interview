@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"{{TTADK_PLUGIN_HOOK_DIR}}/claude-track/scripts/ttadk-track-claude.js\"",
+            "async": true,
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  },
+  "companyAnnouncements": [
+    "🚀 Welcome to TikTok AI-Driven Development Kit!\n💡 Build something? → /adk-sdd-brainstorm + PRD / ERD / any requirement to generate a design doc\n⚡ Run a feature? → /adk-sdd-ff + brainstorm output or ERD to generate Plan / Tasks in one shot\n📘 Need help? → /adk-help | Site: https://ttadk.byteintl.net/"
+  ]
+}

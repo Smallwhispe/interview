@@ -1,0 +1,11 @@
+{
+  "name": "ttadk/overpass",
+  "display_name": "TTADK Overpass",
+  "version": "1.0.0",
+  "description": "Overpass RPC 调用代码生成平台",
+  "author": {"name": "ttadk", "email": "ttadk@bytedance.com"},
+  "tags": [],
+  "skills": [
+    {"name": "overpass-knowledge", "path": "overpass-knowledge"}
+  ]
+}

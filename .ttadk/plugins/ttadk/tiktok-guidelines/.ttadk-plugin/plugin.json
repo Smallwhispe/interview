@@ -1,0 +1,25 @@
+{
+    "name": "ttadk/tiktok-guidelines",
+    "display_name": "TTADK TikTok Guidelines",
+    "version": "1.0.0",
+    "description": "TikTok 开发指南，包括 API 规范和代码规范等",
+    "author": {
+        "name": "ttadk",
+        "email": "ttadk@bytedance.com"
+    },
+    "tags": [],
+    "skills": [
+        {
+            "name": "api-guidelines-knowledge",
+            "path": "api-guidelines-knowledge"
+        },
+        {
+            "name": "code-styleguide-knowledge",
+            "path": "code-styleguide-knowledge"
+        },
+        {
+            "name": "md3c-knowledge",
+            "path": "md3c-knowledge"
+        }
+    ]
+}

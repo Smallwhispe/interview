@@ -1,0 +1,23 @@
+{
+  "name": "ttadk/bits_code_guard",
+  "display_name": "Bits Code Guard",
+  "version": "1.0.23",
+  "description": "字节 devinfra 官方代码审查 skill：多维度缺陷检测、结构化报告与 HTML 可视化。",
+  "author": {
+    "name": "devinfra",
+    "email": "devinfra@bytedance.com"
+  },
+  "tags": [
+    "code-review",
+    "cr",
+    "quality",
+    "security",
+    "concurrency"
+  ],
+  "skills": [
+    {
+      "name": "bits-code-guard",
+      "path": "bits-code-guard"
+    }
+  ]
+}

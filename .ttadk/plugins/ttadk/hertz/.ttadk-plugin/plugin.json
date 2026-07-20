@@ -1,0 +1,11 @@
+{
+  "name": "ttadk/hertz",
+  "display_name": "TTADK Hertz",
+  "version": "1.0.0",
+  "description": "Hertz HTTP 框架开发指南",
+  "author": {"name": "ttadk", "email": "ttadk@bytedance.com"},
+  "tags": [],
+  "skills": [
+    {"name": "hertz-knowledge", "path": "hertz-knowledge"}
+  ]
+}

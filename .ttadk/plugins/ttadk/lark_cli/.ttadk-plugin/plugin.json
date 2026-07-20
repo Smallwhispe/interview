@@ -1,0 +1,14 @@
+{
+  "name": "ttadk/lark_cli",
+  "display_name": "Lark CLI",
+  "version": "1.0.0",
+  "description": "飞书/Lark CLI 工具集：文档读写、图片/画板下载、IM 消息收发。",
+  "author": {
+    "name": "zengyi.cody",
+    "email": "zengyi.cody@bytedance.com"
+  },
+  "tags": ["lark", "feishu", "docs", "im", "export", "markdown"],
+  "skills": [
+    {"name": "lark-cli", "path": "lark-cli"}
+  ]
+}

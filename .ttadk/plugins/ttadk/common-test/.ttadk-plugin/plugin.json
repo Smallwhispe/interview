@@ -1,0 +1,17 @@
+{
+  "name": "ttadk/common-test",
+  "display_name": "TTADK Common Test",
+  "version": "1.0.0",
+  "description": "Common testing skills: prd2case and SDT continuous learning",
+  "author": {"name": "ttadk", "email": "ttadk@bytedance.com"},
+  "tags": [],
+  "skills": [
+    {"name": "prd2case-web", "path": "prd2case-web"},
+    {"name": "prd2case", "path": "prd2case"},
+    {"name": "prd2case-api", "path": "prd2case-api"},
+    {"name": "tt-nova-datagen", "path": "tt-nova-datagen"}
+  ],
+  "mcps": [
+    {"name": "prd2case", "path": "prd2case.json"}
+  ]
+}

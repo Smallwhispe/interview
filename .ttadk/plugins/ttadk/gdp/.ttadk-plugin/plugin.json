@@ -1,0 +1,11 @@
+{
+  "name": "ttadk/gdp",
+  "display_name": "TTADK GDP",
+  "version": "1.0.0",
+  "description": "GDP 项目开发规范和最佳实践",
+  "author": {"name": "ttadk", "email": "ttadk@bytedance.com"},
+  "tags": [],
+  "skills": [
+    {"name": "gdp-knowledge", "path": "gdp-knowledge"}
+  ]
+}

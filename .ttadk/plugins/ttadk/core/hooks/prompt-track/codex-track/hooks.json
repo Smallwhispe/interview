@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"{{TTADK_PLUGIN_HOOK_DIR}}/codex-track/scripts/ttadk-track-codex.js\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

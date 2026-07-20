@@ -1,0 +1,81 @@
+{
+  "name": "ttadk/backend-sdk",
+  "display_name": "TTADK Backend SDK",
+  "version": "1.0.0",
+  "description": "后端服务常用 SDK 和组件，包括存储、配置中心、测试工具等",
+  "author": {
+    "name": "ttadk",
+    "email": "ttadk@bytedance.com"
+  },
+  "tags": [],
+  "skills": [
+    {
+      "name": "byteconf-knowledge",
+      "path": "byteconf-knowledge"
+    },
+    {
+      "name": "bytetim-knowledge",
+      "path": "bytetim-knowledge"
+    },
+    {
+      "name": "confx-knowledge",
+      "path": "confx-knowledge"
+    },
+    {
+      "name": "dolphin-knowledge",
+      "path": "dolphin-knowledge"
+    },
+    {
+      "name": "frontier-knowledge",
+      "path": "frontier-knowledge"
+    },
+    {
+      "name": "imagex-knowledge",
+      "path": "imagex-knowledge"
+    },
+    {
+      "name": "kms-knowledge",
+      "path": "kms-knowledge"
+    },
+    {
+      "name": "libra-knowledge",
+      "path": "libra-knowledge"
+    },
+    {
+      "name": "metrics-knowledge",
+      "path": "metrics-knowledge"
+    },
+    {
+      "name": "metricx-knowledge",
+      "path": "metricx-knowledge"
+    },
+    {
+      "name": "storage-knowledge",
+      "path": "storage-knowledge"
+    },
+    {
+      "name": "streamlog-knowledge",
+      "path": "streamlog-knowledge"
+    },
+    {
+      "name": "tcc-knowledge",
+      "path": "tcc-knowledge"
+    },
+    {
+      "name": "testing-knowledge",
+      "path": "testing-knowledge"
+    },
+    {
+      "name": "rtc-knowledge",
+      "path": "rtc-knowledge"
+    },
+    {
+      "name": "psm-knowledge",
+      "path": "psm-knowledge"
+    },
+    {
+      "name": "bytedtrace-knowledge",
+      "path": "bytedtrace-knowledge"
+    }
+  ]
+}
